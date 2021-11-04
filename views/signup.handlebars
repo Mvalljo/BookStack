@@ -1,0 +1,58 @@
+<!-- SIGN UP BOX -->
+<div
+  class="bg-auto h-full py-6 md:py-12"
+  style="background-image: url(/assets/images/pexels-skitterphoto-442420.jpg);"
+>
+  <div class="container w-3/4 px-4 mx-autp">
+    <div class="mt-7 text-center bg-dark max-w-4xl mx-auto">
+      <h2 class="text-info p-3 md:text-4xl mb-2"><b>Sign Up for Bookstack</b></h2>
+      <form class="signup">
+        <div class="form-group my-2">
+          <label for="exampleInputEmail" class="text-white">Email Address:</label>
+          <input
+            type="email"
+            class="form-control w-9/12 mx-auto"
+            id="email-address"
+            placeholder="Email address..."
+          />
+        </div>
+
+        <div class="form-group my-2">
+          <label for="exampleInputPassword" class="text-white">Password:</label>
+          <input
+            type="password"
+            class="form-control w-9/12 mx-auto"
+            id="password"
+            placeholder="Password..."
+          />
+        </div>
+
+        <div
+          style="display: none;"
+          id="alert"
+          class="alert alert-danger"
+          role="alert"
+        >
+          <span
+            class="glyphicon glyphicon-exclamation-sign"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Error:</span>
+          <span class="msg"></span>
+        </div>
+
+        <div class="m-1">
+          <button
+            class="text-white bg-info text-lg font-bold rounded-lg py-1 px-1"
+            id="signUp"
+          >
+            Sign Up
+          </button>
+        </div>
+
+      </form>
+      <p class="text-white">Or log in
+        <a class="text-info" href="/login">here</a></p>
+    </div>
+  </div>
+</div>

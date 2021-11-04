@@ -11,6 +11,10 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
       rel="stylesheet"
     />
@@ -97,8 +101,13 @@
 
     <div class="flex-column justify-space-around">
       <main class="container container-fluid mt-5">
-        <!-- Render the sub layout -->
-        {{{body}}}
+        <div
+          class="bg-auto h-full py-6 md:py-12"
+          style="background-image: url(/assets/images/pexels-skitterphoto-442420.jpg);"
+        >
+          <!-- Render the sub layout -->
+          {{{body}}}
+        </div>
       </main>
 
       <footer
