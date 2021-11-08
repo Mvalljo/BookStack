@@ -19,6 +19,10 @@ router.get("/browse", (req, res) => {
   res.render("browse", { logged_in: true });
 });
 
+router.get("/search", (req, res) => {
+  res.render("search", { logged_in: true });
+});
+
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
