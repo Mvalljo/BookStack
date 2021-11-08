@@ -74,7 +74,7 @@ function handleSearchFormSubmit (event) {
       if (res.status >= 400) {
         throw new Error("Bad response from server");
       }
-      resultTextEl.textContent = searchInputVal;
+      resultTextEl.textContent = "Showing results for " + searchInputVal;
 
       const user = await res.json();
       console.log(user.totalItems);
