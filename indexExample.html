@@ -27,23 +27,19 @@
   </head>
 
   <body>
-    <div class="container w-3/4 px-4 mx-autp">
-      <div class="mt-7 text-center bg-dark max-w-4xl mx-auto">
+    <div class="container w-3/4 px-4 mx-auto mb-2">
+      <div class="mt-7 text-center bg-dark max-w-4xl mx-auto mb-2">
         <h2 class="text-info p-3 md:text-4xl mb-2">
-          <b>Search By Title Or Author</b>
+          <b>New York Times Best Selling Books</b>
         </h2>
-        <form class="search mb-6 pb-3">
-          <div class="form-group my-2">
-            <label for="searchbar" class="text-white">Search:</label>
-            <input
-              type="text"
-              class="form-control w-9/12 mx-auto mb-6"
-              id="search-input"
-              placeholder="Title or Author Name..."
-            />
-          </div>
-        </form>
+        <div class="select is-info mt-2 mb-">
+          <select id="nytList">
+            <option>Select a list</option>
+          </select>
+        </div>
       </div>
     </div>
+    <script type="module" src="./js/nytOneList.mjs"></script>
+    <script type="module" src="./js/nytList.mjs"></script>
   </body>
 </html>
