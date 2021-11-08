@@ -44,7 +44,8 @@ document.getElementById("nytList").addEventListener("change", (event) => {
         listContentEl.textContent = "";
         printResults(user.results);
       }
-      bestSellerList.textContent = user.results.list_name;
+      bestSellerList.textContent =
+        "Showing results for " + user.results.list_name;
       console.log("Best Sellers List Name: " + user.results.list_name);
       for (let i = 0; i < 10; i++) {
         console.log("Title: " + user.results.books[i].title);
