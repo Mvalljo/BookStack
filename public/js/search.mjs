@@ -2,7 +2,7 @@ const searchFormEl = document.querySelector(".search");
 const resultContentEl = document.querySelector("#result-content");
 const resultTextEl = document.querySelector("#result-text");
 
-function handleSearchFormSubmit (event) {
+function handleSearchFormSubmit(event) {
   event.preventDefault();
 
   const searchInputVal = document.querySelector("#search-input").value;
@@ -12,12 +12,17 @@ function handleSearchFormSubmit (event) {
     return;
   }
 
-  function printResults (resultObj) {
+  function printResults(resultObj) {
     console.log(resultObj);
 
     // set up `<div>` to hold result content
     const resultCard = document.createElement("div");
     resultCard.classList.add("card", "bg-light", "text-dark", "mb-3", "p-3");
+
+    const resultImg = document.createElement("img");
+    resultImg.classList.add("card-img-top", "imgResult");
+    resultImg.src = resultObj.volumeInfo.imageLinks.smallThumbnail;
+    resultCard.append(resultImg);
 
     const resultBody = document.createElement("div");
     resultBody.classList.add("card-body");
