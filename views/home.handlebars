@@ -18,5 +18,29 @@
         </p>
       </div>
     </div>
+
+
+    <div class="container w-3/4 px-4 mx-auto my-auto p-2">
+      <div class="mt-7 text-center bg-dark rounded-lg max-w-4xl mx-auto">
+        <h2 class="text-info p-3 md:text-4xl mb-2">
+          <b>Start A Book Discussion</b>
+        </h2>
+        <p class="card-text text-info text-lg p-3 mb-2">
+          Tell us and others what you're thinking about a certain book topic. Maybe it's a recommendation, or maybe it's a portion of the book that you want to talk about. Give us your 
+          thoughts and start a discussion!
+        </p>
+        <div class="">
+        <form method=post action="do_addtopic.php">
+          <p class="text-info my-1"><strong>Your E-Mail Address:</strong><br>
+          <input type="text" name="topic_owner" size=40 maxlength=150>
+          <p class="text-info my-1"><strong>Topic Title:</strong><br>
+          <input type="text" name="topic_title" size=40 maxlength=150>
+          <P class="text-info my-1"><strong>Post Text:</strong><br>
+          <textarea name="post_text" rows=8 cols=40 wrap=virtual></textarea>
+          <P ><input class="text-white bg-info text-lg font-bold rounded-lg py-1 px-1 my-2" type="submit" name="submit" value="Post"></p>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
