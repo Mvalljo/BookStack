@@ -17,3 +17,8 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+.imgResult {
+  width: fit-content;
+  height: fit-content;
+}
