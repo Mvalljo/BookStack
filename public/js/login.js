@@ -11,12 +11,12 @@ const loginFormHandler = async (event) => {
     const response = await fetch("/api/users/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
-      headers: { "Content-Type": "application/json" }
+      headers: { "Content-Type": "application/json" },
     });
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace("/");
+      document.location.replace("/home");
     } else {
       // eslint-disable-next-line no-undef
       alert(response.statusText);
@@ -24,6 +24,4 @@ const loginFormHandler = async (event) => {
   }
 };
 
-document
-  .querySelector(".login")
-  .addEventListener("submit", loginFormHandler);
+document.querySelector(".login").addEventListener("submit", loginFormHandler);
