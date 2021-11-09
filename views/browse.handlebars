@@ -9,10 +9,12 @@
       </select>
     </div>
   </div>
-  <h2 class="text-dark md:text-4xl" id="list-text"></h2>
-  <div class="col-12 col-md-9 p-3 text-light">
-    <div id="list-content"></div>
+  <div class="" id="list-content">
+      {{#each results as |result|}}
+      {{> list-details}}
+      {{/each}}
   </div>
 </div>
+
 <script type="module" src="./js/nytOneList.mjs"></script>
 <script type="module" src="./js/nytList.mjs"></script>
