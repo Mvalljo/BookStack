@@ -27,28 +27,73 @@
   </head>
 
   <body>
-    <div class="container w-3/4 px-4 mx-autp">
-      <div class="mt-7 text-center bg-dark max-w-4xl mx-auto">
-        <h2 class="text-info p-3 md:text-4xl mb-2">
-          <b>Search By Title Or Author</b>
-        </h2>
-        <form class="search mb-6 pb-3">
-          <div class="form-group my-2">
-            <label for="searchbar" class="text-white">Search:</label>
-            <input
-              type="text"
-              class="form-control w-9/12 mx-auto mb-6"
-              id="search-input"
-              placeholder="Title or Author Name..."
-            />
-            <button class="btn btn-info btn-block">Search</button>
-          </div>
-        </form>
-      </div>
-      <div class="col-12 col-md-9 p-3 text-light">
-        <h2>Showing results for <span id="result-text"></span></h2>
-        <div id="result-content"></div>
+    <div
+      class="bg-auto h-full py-6 md:py-12"
+      style="
+        background-image: url(/assets/images/pexels-skitterphoto-442420.jpg);
+      "
+    >
+      <div class="container w-3/4 px-4 mx-autp">
+        <div class="mt-7 text-center bg-dark max-w-4xl mx-auto">
+          <h2 class="text-info p-3 md:text-4xl mb-2">
+            <b>Add A Book To Your Collection</b>
+          </h2>
+          <form class="login">
+            <div class="form-group my-2">
+              <label for="exampleInputTitle" class="text-white"
+                >Title of Book:</label
+              >
+              <input
+                type="text"
+                class="form-control w-9/12 mx-auto"
+                id="book-title"
+                placeholder="Title..."
+              />
+            </div>
+
+            <div class="form-group my-2">
+              <label for="exampleInputAuthor" class="text-white">Author</label>
+              <input
+                type="text"
+                class="form-control w-9/12 mx-auto"
+                id="book-author"
+                placeholder="Author Name..."
+              />
+            </div>
+
+            <div class="form-group my-2">
+              <p for="exampleInputRecommendation" class="text-white"></p>
+                Recommendation
+              </p>
+              <textarea
+              class="form-control w-9/12 mx-auto"
+                name="post_text"
+                rows="8"
+                cols="40"
+                wrap="virtual"
+                placeholder="Type Your Recommendation Here..."
+              ></textarea>
+            </div>
+
+            <div class="m-1">
+              <button
+                class="
+                  text-white
+                  bg-info
+                  text-lg
+                  font-bold
+                  rounded-lg
+                  py-1
+                  px-1
+                "
+                id="post"
+              >
+                Add To Bookstack
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-    <script type="module" src="./js/search.mjs" ></script>
+  </body>
 </html>
