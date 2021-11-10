@@ -7,7 +7,7 @@ the numerous of genres and find the best selling books on the New York Times Bes
 
 ## Link to Deployed Application
 
-https://nameless-shelf-78239.herokuapp.com/
+https://bookstack6.herokuapp.com/
 
 ## Link to Video Walkthrough
 
