@@ -39,10 +39,7 @@ router.get("/browse", (req, res) => {
 });
 
 router.get("/search", (req, res) => {
-  if (req.session.logged_in) {
-    res.render("search", { logged_in: true });
-  }
-  res.redirect("/");
+  res.render("search", { logged_in: true });
 });
 
 router.get("/login", (req, res) => {
