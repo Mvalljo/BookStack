@@ -17,11 +17,19 @@ router.get("/home", (req, res) => {
 });
 
 router.get("/browse", (req, res) => {
-  res.render("browse", { logged_in: true });
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.render("browse", { logged_in: true });
+    return;
+  }
+  res.redirect("/");
 });
 
 router.get("/search", (req, res) => {
-  res.render("search", { logged_in: true });
+  if (req.session.logged_in) {
+    res.render("search", { logged_in: true });
+  }
+  res.redirect("/");
 });
 
 router.get("/login", (req, res) => {
