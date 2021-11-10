@@ -27,8 +27,8 @@
 
   <body>
     <!-- START NAVBAR -->
-    {{#if logged_in}}
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg p-3">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg p-3">
+      <div class="container-fluid">
         <a
           class="navbar-brand fs-1 fw-bolder text-info"
           id="title"
@@ -37,15 +37,15 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbar"
-          aria-controls="navbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Navigation"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="/">Homepage</a>
@@ -59,56 +59,24 @@
             <li class="nav-item">
               <a class="nav-link" href="/search">Search</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="logout" >Logout</a>
-            </li>
+            {{#if logged_in}}
+              <li class="nav-item">
+                <a class="nav-link" id="logout">Logout</a>
+              </li>
+            {{else}}
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+            {{/if}}
           </ul>
         </div>
-      </nav>
-    {{else}}
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg p-3">
-        <a
-          class="navbar-brand fs-1 fw-bolder text-info"
-          id="title"
-          href="/"
-        >Bookstack</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Homepage</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">My Stacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">Browse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">Search</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    {{/if}}
+      </div>
+    </nav>
 
     <div class="flex-column justify-space-around">
       <main class="container container-fluid mt-5">
-          <!-- Render the sub layout -->
-          {{{body}}}
+        <!-- Render the sub layout -->
+        {{{body}}}
       </main>
 
       <footer
@@ -125,6 +93,11 @@
     {{#if logged_in}}
       <script src="/js/logout.js"></script>
     {{/if}}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 
 </html>
