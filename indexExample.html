@@ -38,12 +38,31 @@
           </select>
         </div>
       </div>
-      <div class="" id="list-content">
-        {{#each results as |result|}} {{> list-details}} {{/each}}
+    </div>
+    <div class="w-2/4 content-center" id="list-content">
+      <div class="list">
+        <div class="column media bg-dark mb-3">
+          <div class="card">
+            <img
+              class="mr-3"
+              src="https://storage.googleapis.com/du-prd/books/images/9781984818508.jpg"
+              alt="book image"
+              width="64px"
+              height="64px"
+            />
+            <div class="media-body">
+              <h5 class="mt-0 mb-1 text-info">
+                1. Better Off Dead by Lee Child and Andew Child
+              </h5>
+              <p class="mt-0 mb-1 text-info">
+                Description: The 26th book in the Jack Reacher series. Reacher
+                helps an F.B.I. agent look for her missing brother and takes on
+                a foe named Dendoncker.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script type="module" src="./js/nytOneList.mjs"></script>
-    <script type="module" src="./js/nytList.mjs"></script>
   </body>
 </html>
