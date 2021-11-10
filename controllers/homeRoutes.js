@@ -16,6 +16,19 @@ router.get("/home", (req, res) => {
   res.render("home", { logged_in: true });
 });
 
+router.get("/mystacks", (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.render("myStacks", { logged_in: true });
+    return;
+  }
+  res.redirect("/");
+});
+
+router.get("/myStacks/newBook", (req, res) => {
+  res.render("newBook", { logged_in: true });
+});
+
 router.get("/browse", (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
