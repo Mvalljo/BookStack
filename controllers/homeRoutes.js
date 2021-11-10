@@ -60,7 +60,7 @@ router.get("/print-ebook-fiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -83,7 +83,7 @@ router.get("/print-ebook-nonfiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -106,7 +106,7 @@ router.get("/hardcover-fiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -129,7 +129,7 @@ router.get("/hardcover-nonfiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -152,7 +152,7 @@ router.get("/trade-fiction-paperback", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -175,7 +175,7 @@ router.get("/mass-market-paperback", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -198,7 +198,7 @@ router.get("/paperback-nonfiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -221,7 +221,7 @@ router.get("/ebook-fiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -244,7 +244,7 @@ router.get("/ebook-nonfiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -267,7 +267,7 @@ router.get("/hardcover-advice", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -290,7 +290,7 @@ router.get("/paperback-advice", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -313,7 +313,7 @@ router.get("/advice-how-to-and-miscellaneous", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -336,7 +336,7 @@ router.get("/hardcover-graphic-books", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -359,7 +359,7 @@ router.get("/paperback-graphic-books", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -382,7 +382,7 @@ router.get("/manga", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -405,7 +405,7 @@ router.get("/combined-print-fiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -428,7 +428,7 @@ router.get("/combined-print-nonfiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -451,7 +451,7 @@ router.get("/chapter-books", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -474,7 +474,7 @@ router.get("/children-middle-grade", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -497,7 +497,7 @@ router.get("/children-middle-grade-ebook", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -520,7 +520,7 @@ router.get("/children-middle-grade-hardcover", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -543,7 +543,7 @@ router.get("/children-middle-grade-paperback", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -566,7 +566,7 @@ router.get("/paperback-books", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -589,7 +589,7 @@ router.get("/picture-books", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -612,7 +612,7 @@ router.get("/series-books", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -635,7 +635,7 @@ router.get("/young-adult", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -658,7 +658,7 @@ router.get("/young-adult-ebook", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -681,7 +681,7 @@ router.get("/young-adult-hardcover", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -704,7 +704,7 @@ router.get("/young-adult-paperback", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -727,7 +727,7 @@ router.get("/animals", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -750,7 +750,7 @@ router.get("/audio-fiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -773,7 +773,7 @@ router.get("/audio-nonfiction", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -796,7 +796,7 @@ router.get("/business-books", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -819,7 +819,7 @@ router.get("/celebrities", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -842,7 +842,7 @@ router.get("/crime-and-punishment", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -865,7 +865,7 @@ router.get("/culture", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -888,7 +888,7 @@ router.get("/education", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -911,7 +911,7 @@ router.get("/espionage", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -934,7 +934,7 @@ router.get("/exp-dis-and-adv", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -957,7 +957,7 @@ router.get("/fashion-man-and-cust", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -980,7 +980,7 @@ router.get("/food-and-fitness", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1003,7 +1003,7 @@ router.get("/games-and-activities", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1026,7 +1026,7 @@ router.get("/graphic-books-and-manga", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1049,7 +1049,7 @@ router.get("/hardcover-business", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1072,7 +1072,7 @@ router.get("/health", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1095,7 +1095,7 @@ router.get("/humor", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1118,7 +1118,7 @@ router.get("/indigenous-americans", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1141,7 +1141,7 @@ router.get("/relationships", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1164,7 +1164,7 @@ router.get("/mass-market-monthly", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1187,7 +1187,7 @@ router.get("/middle-grade-paperback-monthly", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1210,7 +1210,7 @@ router.get("/paperback-business", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1233,7 +1233,7 @@ router.get("/family", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1256,7 +1256,7 @@ router.get("/hardcover-political", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1279,7 +1279,7 @@ router.get("/race-and-civil-right", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1302,7 +1302,7 @@ router.get("/religion-spirit-and-faith", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1325,7 +1325,7 @@ router.get("/science", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1348,7 +1348,7 @@ router.get("/sports", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1371,7 +1371,7 @@ router.get("/travel", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
@@ -1394,7 +1394,7 @@ router.get("/young-adult-paperback-monthly", (req, res) => {
         results.push(listResults);
       }
       console.log(results);
-      res.render("browse", { results });
+      res.render("browse", { results, logged_in: true });
     })
     .catch(function (error) {
       console.log(error);
