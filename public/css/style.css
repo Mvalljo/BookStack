@@ -1,10 +1,21 @@
 #title {
   font-family: cursive;
 }
-
+/*
 body {
   background: url("/assets/images/pexels-skitterphoto-442420.jpg") no-repeat
     center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-bottom: 100px;
+}
+*/
+.background {
+  background: url("/assets/images/pexels-skitterphoto-442420.jpg") no-repeat
+    center center fixed;
+  opacity: 0.5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
