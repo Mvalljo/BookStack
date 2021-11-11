@@ -9,7 +9,7 @@ the numerous of genres and find the best selling books on the New York Times Bes
 
 https://bookstack6.herokuapp.com/
 
-## Link to Deployed Application
+## Link to Walkthorugh of Application
 
 https://youtu.be/WX3WrtRRWwI
 
