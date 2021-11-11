@@ -9,7 +9,9 @@ the numerous of genres and find the best selling books on the New York Times Bes
 
 https://bookstack6.herokuapp.com/
 
-## Link to Video Walkthrough
+## Link to Deployed Application
+
+https://youtu.be/WX3WrtRRWwI
 
 ## Table of Contents
 
@@ -24,7 +26,10 @@ https://bookstack6.herokuapp.com/
 - [License](#license)
 
 ## Snapshot
-
+![image](https://user-images.githubusercontent.com/86633258/141242363-192bbbf7-7614-4dc3-8ddf-5195e4dbd128.png)![image](https://user-images.githubusercontent.com/86633258/141243271-3294c9ab-0b26-4a59-940d-b55dd6545b0d.png)
+![image](https://user-images.githubusercontent.com/86633258/141244073-1e877d96-1322-4780-8158-a9fd769c71fa.png)
+![image](https://user-images.githubusercontent.com/86633258/141244110-eb014f72-13e9-402c-b2cf-962408aea30d.png)
+![image](https://user-images.githubusercontent.com/86633258/141244167-b30a4a2c-db71-4df3-aaf7-9bbf387a26e5.png)
 ## Technology_Used
 
 - JavaScript
