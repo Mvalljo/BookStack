@@ -67,5 +67,15 @@
       </div>
     </div>
   </div>
+  <div class="container px-4 mb-2 my-auto">
+  <div class="mt-7 text-center bg-dark rounded-lg max-w-4xl mx-auto">
+    <h2 class="text-info p-3 md:text-4xl mb-2">
+      <b>Discussion Board</b>
+    </h2>
+    {{#each posts as |post|}}
+      {{> discussion-board}}
+    {{/each}}
+    </div>
+  </div>
 </div>
 
