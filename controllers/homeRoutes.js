@@ -7,7 +7,6 @@ router.get("/", (req, res) => {
     res.redirect("/home");
     return;
   }
-
   res.render("login");
 });
 

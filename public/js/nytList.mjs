@@ -62,7 +62,6 @@
       "Young Adult Paperback Monthly"
     ];
     const listOption = document.querySelector("#nytList");
-    console.log(nytList);
     for (let l = 0; l < nytList.length; l++) {
       const optionList = document.createElement("OPTION");
       optionList.setAttribute("value", nytList[l]);

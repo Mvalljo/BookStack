@@ -2,19 +2,16 @@ const searchFormEl = document.querySelector(".search");
 const resultContentEl = document.querySelector("#result-content");
 const resultTextEl = document.querySelector("#result-text");
 
-function handleSearchFormSubmit(event) {
+function handleSearchFormSubmit (event) {
   event.preventDefault();
 
   const searchInputVal = document.querySelector("#search-input").value;
-  console.log(searchInputVal);
   if (!searchInputVal) {
     console.error("You need a search input value!");
     return;
   }
 
-  function printResults(resultObj) {
-    console.log(resultObj);
-
+  function printResults (resultObj) {
     // set up `<div>` to hold result content
     const resultCard = document.createElement("div");
     resultCard.classList.add("card", "bg-light", "text-dark", "mb-3", "p-3");
@@ -82,7 +79,6 @@ function handleSearchFormSubmit(event) {
       resultTextEl.textContent = "Showing results for " + searchInputVal;
 
       const user = await res.json();
-      console.log(user.totalItems);
       let searchResultNum = user.totalItems;
       if (user.totalItems >= 10) {
         console.log("too many");
