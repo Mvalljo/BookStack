@@ -3,15 +3,17 @@
     <h2 class="text-info p-3 md:text-4xl mb-2">
       <b>New York Times Best Selling Books</b>
     </h2>
+<!-- Displays a droptdown of categories the user can choose to see the list of the top 10 books for that category choosen-->
     <div class="select is-info mt-2 mb-2">
           <select class="mb-3 w-3/6" id="nytList">
             <option>Select a list</option>
           </select>
         </div>
   </div>
+<!-- Display top 10 books from category choosen -->
   <div class="" id="list-content">
       {{#each results as |result|}}
-      {{> list-details}}
+        {{> list-details}}
       {{/each}}
   </div>
 </div>

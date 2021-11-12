@@ -1,5 +1,6 @@
 (async () => {
   try {
+    // List of Categories from the NYT Best Seller
     const nytList = [
       "Combined Print and E-Book Fiction",
       "Combined Print and E-Book Nonfiction",
@@ -62,6 +63,7 @@
       "Young Adult Paperback Monthly"
     ];
     const listOption = document.querySelector("#nytList");
+    // each category from the list is added to the dropdown
     for (let l = 0; l < nytList.length; l++) {
       const optionList = document.createElement("OPTION");
       optionList.setAttribute("value", nytList[l]);
